@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>TIPE</title>
+</head>
+<body> 
+    <div class="hello">
+        <p>Calculer l'angle qu'on doit utiliser pour frapper une cible à une distance D avec des calibres différents.</p>
+    </div>
+
+    <div class="image-list">
+        <div class="image-item">
+            <img src="9mm.jpg" alt="Image 1">
+            <button class="choose btn remove" onclick="calculateAngle(350)">Calculate</button>
+        </div>
+        <div class="image-item first">
+            <img src="50.jpeg" alt="Image 2">
+            <button class="choose btn remove" onclick="calculateAngle(1200)">Calculate</button>
+        </div>
+        <div class="image-item">
+            <img src="22lr.png" alt="Image 3">
+            <button class="choose btn remove" onclick="calculateAngle(300)">Calculate</button>
+        </div>
+        <div class="image-item">
+            <img src="243_WIN_Cartridge.jpg" alt="Image 4">
+            <button class="choose btn remove" onclick="calculateAngle(900)">Calculate</button>
+        </div>
+        <div class="image-item">
+            <img src="Cal_7.62x39_mm_M67_Ball.jpg" alt="Image 5">
+            <button class="choose btn remove" onclick="calculateAngle(700)">Calculate</button>
+        </div>
+    </div>
+    <div class="input-container">
+        <label for="userInput">Entrer la valeur de la distance :</label>
+        <input type="number" id="userInput" placeholder="Enter a value">
+        
+    </div>
+
+    <div id="output"></div>
+    <div id="output2"></div>
+</body>
+</html>

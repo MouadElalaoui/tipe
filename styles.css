@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+.image-item {
+    flex: 1;
+    box-sizing: border-box;
+    border-right: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+
+.choose {
+    margin-top: auto; /* Push the button to the bottom of the container */
+}
+
+/* Add the following style to make the buttons appear in a single line */
+.image-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add the following style to center the buttons horizontally */
+.choose {
+    margin: 0 auto;
+}
+
+.btn{
+
+    width: 27%;
+    height: 20px;
+    transition: 0.7s;   
+
+}
+
+.btn:hover{
+    width: 28%;
+    height: 23px;
+}
